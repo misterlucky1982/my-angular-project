@@ -11,15 +11,13 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle">
-        Manage recipe <span class="ui-icon-caret-1-e">XXX</span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a href="#">To shopping list</a></li>
-        <li><a href="#">Edit recipe</a></li>
-        <li><a href="#">Delete recipe</a></li>
-      </ul>
+    <div class="dropdown" app-dropdown>
+      <a class="btn btn-light dropdown-toggle" href="#" id="recipe_manage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">manage recipe</a>
+      <div class="dropdown-menu" aria-labelledby="recipe_manage">
+        <a class="dropdown-item" href="#">to shopping list</a>
+        <a class="dropdown-item" href="#">edit recipe</a>
+        <a class="dropdown-item" href="#">delete recipe</a>
+      </div>
     </div>
   </div>
 </div>

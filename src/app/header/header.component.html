@@ -8,15 +8,15 @@
         <li class="mx-5"><a href="#" (click)="onSelect('recipes')">Recipes</a></li>
         <li class="mx-5"><a href="#" (click)="onSelect('shopping-list')">Shopping-list</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" role="button">manage</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Save Data</a></li>
-            <li><a href="#">Fetch data</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="nav navbar-right">
+        <div class="dropdown" app-dropdown>
+          <a class="btn btn-light dropdown-toggle" href="#" id="header_manage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">manage</a>
+          <div class="dropdown-menu" aria-labelledby="header_manage">
+            <a class="dropdown-item" href="#">Save Data</a>
+            <a class="dropdown-item" href="#">Fetch data</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
