@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" xmlns="http://www.w3.org/1999/html">
   <div class="col-sm-12">
     <img src="{{ recipe.imagePath }}" alt="recipe image" class="img-thumbnail"
     style="max-height: 300px;">
@@ -28,6 +28,9 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    Ingredients
+    <ul class="list-group">
+      <li class="list-group-item"
+      *ngFor="let i of recipe.ingredients">{{ i.name }} - {{ i.amount }}</li>
+    </ul>
   </div>
 </div>
