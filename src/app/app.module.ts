@@ -13,7 +13,6 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 import {DropDownDirective} from './shared/dropdown.directive';
 import {ShoppingListService} from './shopping-list/shopping-list.service';
-import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [

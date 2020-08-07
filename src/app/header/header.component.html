@@ -4,9 +4,9 @@
       <a href="#" class="navbar-brand">Recipe Book</a>
     </div>
     <div class="nav">
-      <ul class="nav nav-justified">
-        <li class="mx-5"><a href="#" (click)="onSelect('recipes')">Recipes</a></li>
-        <li class="mx-5"><a href="#" (click)="onSelect('shopping-list')">Shopping-list</a></li>
+      <ul class="nav nav-nav">
+        <li class="mx-5"><a routerLink="/recipes" class={{getClassForRecipes()}}>Recipes</a></li>
+        <li class="mx-5"><a routerLink="/shopping-list" class={{getClassForShoppingList()}}>Shopping-list</a></li>
       </ul>
       <div class="nav navbar-right">
         <div class="dropdown" app-dropdown>
