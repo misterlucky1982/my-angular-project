@@ -1,7 +1,8 @@
-<a class="list-group-item clearfix" style="cursor: pointer">
+<a class="list-group-item clearfix bg-light" style="cursor: pointer" [routerLink]="[index]"
+routerLinkActive="border-dark font-weight-bold">
   <div class="float-left">
-    <h4 class="list-group-item-action">{{ recipeItem.name }}</h4>
-    <p class="list-group-item-light">{{ recipeItem.description }}</p>
+    <h4 class="list-group-item-action" style="background: inherit">{{ recipeItem.name }}</h4>
+    <p class="list-group-item-light" style="background: inherit">{{ recipeItem.description }}</p>
   </div>
   <span class="float-right"><img [src]="recipeItem.imagePath" class="img-fluid" style="max-height: 80px; max-width: 80px"></span>
 </a>

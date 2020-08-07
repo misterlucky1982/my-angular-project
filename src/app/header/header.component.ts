@@ -12,11 +12,11 @@ export class HeaderComponent{
   }
 
   getClassForShoppingList(){
-    return this.router.url==='/shopping-list'?this.activeTabClass:this.defaultTabClass;
+    return this.router.url.startsWith('/shopping-list')?this.activeTabClass:this.defaultTabClass;
   }
 
   getClassForRecipes(){
-    return this.router.url==='/recipes'?this.activeTabClass:this.defaultTabClass;
+    return this.router.url.startsWith('/recipes')?this.activeTabClass:this.defaultTabClass;
   }
 
 }
